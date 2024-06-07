@@ -11,9 +11,8 @@ export default function Sidebar() {
     }, [])
     return (
         <div>
-            <p className="text-3xl font-bold underline">TESTSSSSSSS</p>
+            <p className="text-3xl font-bold underline">Menu</p>
             <nav className={classNames}>
-                <p className="text-3xl text-red">Ciao pippo</p>
                 <input className={styles.input} placeholder="Search..." />
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
