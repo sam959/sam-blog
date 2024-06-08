@@ -7,7 +7,7 @@ import { source_code } from '../fonts';
 export default function Navbar() {
     const pathname = usePathname();
     return (
-        <div className="fixed navbar bg-primary z-50">
+        <div id="navbar" className="fixed navbar bg-primary z-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label htmlFor="my-drawer" tabIndex={0} role="button" className="btn btn-ghost btn-circle navbar__hamburger">

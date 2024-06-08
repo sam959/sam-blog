@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: Inter, -apple-system, Source Code Pro, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sanss, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -40,4 +41,9 @@ a {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.layout__screen {
+  height: calc(100vh);
+  padding-top: 64px;
 }
