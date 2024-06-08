@@ -20,11 +20,24 @@ a {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.gradient-background {
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  background-size: 100%;
+  animation: Gradient 15s ease infinite;
 }
 
 .code-text-title {
   font-family: Fira Sans;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -12,15 +12,17 @@ export default function RootLayout({
     return (
         <html lang="en" data-theme="cupcake">
             <body className=''>
+
                 <Navbar />
-                <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
+                <div className="relative top-16 flex h-screen flex-col md:flex-row md:overflow-hidden">
                     {/* 
                      <div className="w-full flex-none md:w-64">
                        <SideNav />
                     </div>
                     */}
-                    <div className={`${fira.className} grow p-6 md:overflow-y-auto md:p-12`}>{children}</div>
+                    <div className={`${fira.className} grow  md:overflow-y-auto `}>{children}</div>
                 </div>
+
             </body>
         </html >
     );
