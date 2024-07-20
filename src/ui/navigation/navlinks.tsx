@@ -5,6 +5,7 @@ import {
     PaintBrushIcon,
     HomeIcon,
     DocumentTextIcon,
+    ChatBubbleLeftRightIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -15,12 +16,13 @@ import clsx from 'clsx';
 const links = [
     { name: 'Home', href: '/', icon: HomeIcon },
     {
-        name: 'Articles',
-        href: '/articles',
+        name: 'Writings',
+        href: '/writing',
         icon: DocumentTextIcon,
     },
     { name: 'Art', href: '/art', icon: PaintBrushIcon },
-    { name: 'Code', href: '/code', icon: CodeBracketIcon }
+    { name: 'Code', href: '/code', icon: CodeBracketIcon },
+    { name: 'Contacts', href: '/contacts', icon: ChatBubbleLeftRightIcon }
 ];
 
 export default function NavLinks() {
@@ -35,7 +37,7 @@ export default function NavLinks() {
                         key={link.name}
                         href={link.href}
                         className={clsx(
-                            'mb-2 flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-base-100 shadow-md p-3 text-sm font-medium hover:bg-accent hover:text-accent-content md:flex-none md:justify-start md:p-2 md:px-3',
+                            'mb-2 flex h-[48px]  items-center justify-center gap-2 rounded-md bg-base-100 shadow-md p-3 text-sm font-medium hover:bg-accent hover:text-accent-content md:flex-none md:justify-start md:p-2 md:px-3',
                             {
                                 'bg-accent text-secondary': pathname === link.href,
                             },
