@@ -1,6 +1,7 @@
 {
-  "slug": "Questo è il secondo",
+  "id" : "7d587400-893a-463d-9fbe-d38c4e5546e8",
+  "slug": "Questo è il terzo",
   "title": "Third Article",
   "content": "<p>Sarò breve.</p><p>...contenuto...</p>",
-  "tags": ["movies", "action"]
+  "tags": ["movies", "entertainment"]
 }

@@ -16,6 +16,14 @@ export const getPostBySlug = async (slug: string): Promise<Article> => {
     return JSON.parse(fileContents);
 };
 
+export const getPostById = async (id: string): Promise<Article> => {
+    console.log("finding article+++",id);
+
+    let newVar = await getAllPosts();
+    console.log("found article+++",newVar);
+    return newVar.find(post => post.id == id);
+};
+
 export const getAllPosts = cache(async () => {
     const slugs = await readAll();
     return await Promise.all(slugs.map(slug => getPostBySlug(slug)));

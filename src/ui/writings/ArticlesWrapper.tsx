@@ -29,7 +29,7 @@ export default function ArticlesWrapper({selectedTag}: ArticlesWrapperProps) {
                     key={index}
                     title={article.title}
                     slug={article.slug}
-                    content={article.content}
+                    id={article.id}
                     tags={article.tags}
                 />
             })

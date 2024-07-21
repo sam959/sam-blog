@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default  function ArticleCard({
     title,
     slug,
-    content,
+    id,
     tags,
 }: {
     title: string;
     slug : string;
-    content: string;
+    id: string;
     tags: string[];
 }) {
     return (
@@ -31,7 +33,10 @@ export default  function ArticleCard({
                 <p>{slug}</p>
 
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Read full article</button>
+                    <Link href={`/writing/${id}`} className="hover:underline">
+                        <button className="btn btn-primary">Read full article</button>
+                    </Link>
+
                 </div>
 
             </div>

@@ -1,6 +1,7 @@
 {
-  "slug": "Questo è il secondo",
-  "title": "Second Article",
+  "id" : "8c1397ea-1716-4be7-bc2b-74561f9b6dd2",
+  "slug": "Really? ANOTHER one??",
+  "title": "Mission impossible: the end..?",
   "content": "<p>Sarò breve.</p><p>...contenuto...</p>",
   "tags": ["movies", "action"]
 }
