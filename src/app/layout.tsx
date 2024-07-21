@@ -1,6 +1,4 @@
 import '../ui/global.css';
-import Sidebar from '../ui/navigation/sidebar';
-import SideNav from '../ui/navigation/sidenav';
 import Navbar from '../ui/navigation/navbar';
 import { fira } from '../ui/fonts';
 import { Metadata } from 'next';

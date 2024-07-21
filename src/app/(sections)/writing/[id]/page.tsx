@@ -1,4 +1,4 @@
-import {getAllPosts, getPostById, getPostBySlug} from "../../../../lib/articlesData";
+import {getAllPosts, getPostById} from "../../../../lib/articlesData";
 import {notFound} from "next/navigation";
 import Container from "../../../../ui/writings/Containter";
 import Header from "../../../../ui/writings/Header";
