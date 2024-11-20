@@ -1,4 +1,4 @@
-import DateFormatter from "./date-formatter";
+import DateFormatter from "../../components/date-formatter";
 import {PostTitle} from "./PostTitle";
 
 

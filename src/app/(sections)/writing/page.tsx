@@ -1,24 +1,14 @@
-'use client';
+import {getAllPosts} from "../../../lib/articlesData";
+import TagSelector from "../../../components/writings/tagSelector";
 
-import "./article.css";
-import {useState} from "react";
 
-import ArticlesNavbar from "../../../ui/writings/articlesNavbar";
-import ArticlesWrapper from "../../../ui/writings/ArticlesWrapper";
-
-export default  function Page() {
-
-    const [selectedTag, setSelectedTag] = useState("all");
-
+export default async function Page() {
+    const articles = await getAllPosts();
     return (
-        <div className="articlesPage__container h-screen">
+        <div className="articlesPage__container min-h-full pt-6 pl-2 pb-8">
             <div className=" articlePage__content w-screen">
-                {/* Title */}
-                <ArticlesNavbar tags={["all", "culture", "fashion", "entertainment"]} onSelectTag={setSelectedTag} />
-                <div className="flex flex-row flex-wrap px-8 gap-4 __articlesContainer">
-                    <ArticlesWrapper selectedTag={selectedTag} />
-                </div>
-            </div >
+                <TagSelector articles={articles}/>
+            </div>
         </div>
     )
 }
