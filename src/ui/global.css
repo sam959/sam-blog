@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind spacing;
 
 html,
 body {
   padding: 0;
   margin: 0;
+  overscroll-behavior: none;
+
   font-family: Inter, -apple-system, Source Code Pro, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sanss, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
@@ -28,10 +29,10 @@ a {
 }
 
 .code-text-title {
-  font-family: Fira Sans;
+  font-family: Fira Sans, sans-serif;
 }
 
-@keyframes Gradient {
+@-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -41,9 +42,4 @@ a {
   100% {
     background-position: 0% 50%;
   }
-}
-
-.layout__screen {
-  height: calc(100vh);
-  padding-top: 64px;
 }

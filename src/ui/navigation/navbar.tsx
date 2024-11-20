@@ -58,7 +58,7 @@ export default function Navbar() {
 
                         //const menuStyle = path === pathname ? pathname : path
 
-                        return <Link href={`${value}`}
+                        return <Link key={`${value + Math.random()}`} href={`${value}`}
                                      className={`${source_code.className} text-xl btn btn-ghost rounded-none px-0`}>{key}</Link>
 
                     })
